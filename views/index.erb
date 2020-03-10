@@ -1,0 +1,9 @@
+<div class="center">
+  <h1>Here comes the films!</h1>
+
+  <ul>
+    <% for film in @films %>
+      <li><a href="/films/<%= film.id %>"><%= film.title %></a></li>
+    <% end %>
+  </ul>
+</div>
